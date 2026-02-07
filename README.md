@@ -217,5 +217,4 @@ Postman collection is included in `postman/`.
 
 ---
 
-## License
-MIT (for educational use).
+
