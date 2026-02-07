@@ -1,4 +1,4 @@
-Below is a **complete, longer, fact-based README.md** (English). Copy–paste it into your repo as `README.md`. Replace placeholders like `<YOUR_RENDER_URL>` and adjust credentials if needed.
+
 
 ```md
 # Social Initiatives Hub (WT2 Final Project)
