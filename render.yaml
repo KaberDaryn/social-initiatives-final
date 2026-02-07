@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: social-initiatives-hub
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      # Set the following in Render dashboard (do not commit real secrets):
+      # - MONGO_URI
+      # - JWT_SECRET
+      # - JWT_EXPIRES_IN
+      # - CORS_ORIGIN
+      # - ADMIN_EMAIL
+      # - ADMIN_PASSWORD
+      # - ADMIN_NAME

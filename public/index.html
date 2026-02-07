@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Social Initiatives Hub</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container row space">
+        <a class="brand" href="/#/">Social Initiatives Hub</a>
+        <nav class="nav">
+          <a href="/#/" id="nav-events">Events</a>
+          <a href="/#/me" id="nav-me" class="hidden">My Profile</a>
+          <a href="/#/admin" id="nav-admin" class="hidden">Admin</a>
+          <a href="/#/login" id="nav-login">Login</a>
+          <a href="/#/register" id="nav-register">Register</a>
+          <button id="btn-logout" class="btn hidden">Logout</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container" id="app">
+      <div class="card">
+        <div class="row space">
+          <div>
+            <div class="muted" id="session-status">Not signed in</div>
+          </div>
+          <div class="row gap">
+            <input id="search-q" class="input" placeholder="Search events..." />
+            <select id="filter-type" class="input">
+              <option value="">All types</option>
+              <option value="workshop">workshop</option>
+              <option value="community">community</option>
+              <option value="other">other</option>
+            </select>
+            <button class="btn" id="btn-search">Search</button>
+          </div>
+        </div>
+      </div>
+
+      <section id="view" class="stack"></section>
+    </main>
+
+    <footer class="footer">
+      <div class="container muted">WT2 Final Project • Node.js + Express + MongoDB</div>
+    </footer>
+
+    <script type="module" src="/js/app.js"></script>
+  </body>
+</html>
